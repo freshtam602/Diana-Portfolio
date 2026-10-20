@@ -1,0 +1,569 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff9fc;
+    color: #4c2940;
+    line-height: 1.6;
+}
+
+
+/* NAVIGATION */
+
+nav {
+    min-height: 75px;
+    padding: 15px 8%;
+    background: rgba(255, 255, 255, 0.95);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    box-shadow: 0 3px 20px rgba(219, 60, 133, 0.08);
+}
+
+.logo {
+    color: #db3c85;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #553047;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #e83e8c;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 88vh;
+    padding: 70px 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 55px;
+
+    background:
+        linear-gradient(135deg, #fff8fc, #ffe0ed);
+}
+
+.hero-text {
+    width: 40%;
+}
+
+.hello {
+    color: #db3c85;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 70px;
+    color: #d63384;
+    line-height: 1.1;
+    margin: 8px 0;
+}
+
+.hero h2 {
+    font-size: 25px;
+    margin-bottom: 18px;
+}
+
+.description {
+    font-size: 18px;
+    color: #6b4a5c;
+    margin-bottom: 30px;
+}
+
+
+/* HERO IMAGE */
+
+.hero-image {
+    width: 55%;
+}
+
+.hero-image img {
+    display: block;
+    width: 100%;
+    max-width: 750px;
+    border-radius: 30px;
+
+    box-shadow:
+        0 20px 50px rgba(214, 51, 132, 0.20);
+}
+
+
+/* BUTTON */
+
+.btn {
+    display: inline-block;
+
+    background:
+        linear-gradient(135deg, #e83e8c, #d63384);
+
+    color: white;
+    text-decoration: none;
+
+    padding: 13px 27px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    box-shadow:
+        0 7px 18px rgba(214, 51, 132, 0.22);
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(214, 51, 132, 0.30);
+}
+
+
+/* GENERAL SECTIONS */
+
+section {
+    padding: 90px 9%;
+}
+
+.small-title {
+    text-align: center;
+    color: #e83e8c;
+
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+
+    margin-bottom: 8px;
+}
+
+.section-title {
+    text-align: center;
+
+    color: #d63384;
+
+    font-size: 38px;
+
+    margin-bottom: 45px;
+}
+
+
+/* ABOUT */
+
+.about {
+    background: white;
+}
+
+.about-card {
+    max-width: 900px;
+    margin: auto;
+
+    background:
+        linear-gradient(135deg, #fff0f6, #fff9fc);
+
+    padding: 45px;
+
+    border-radius: 30px;
+
+    display: flex;
+    align-items: center;
+    gap: 35px;
+
+    border: 1px solid #ffd4e5;
+
+    box-shadow:
+        0 12px 35px rgba(214, 51, 132, 0.10);
+}
+
+.about-icon {
+    min-width: 140px;
+    height: 140px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: white;
+
+    border-radius: 50%;
+
+    font-size: 65px;
+
+    box-shadow:
+        0 8px 25px rgba(214, 51, 132, 0.12);
+}
+
+.about-card h3 {
+    color: #d63384;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.about-card p {
+    margin-bottom: 12px;
+    color: #67495a;
+}
+
+.about-card span {
+    color: #e83e8c;
+    font-weight: bold;
+}
+
+
+/* SKILLS */
+
+.skills-section {
+    background:
+        linear-gradient(180deg, #fff7fb, #ffeaf3);
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    width: 290px;
+
+    background: white;
+
+    padding: 35px 25px;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    box-shadow:
+        0 12px 30px rgba(214, 51, 132, 0.11);
+
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+}
+
+.skill-icon {
+    width: 70px;
+    height: 70px;
+
+    margin: 0 auto 18px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 20px;
+
+    color: white;
+
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.html-icon {
+    background: #ef6a4b;
+}
+
+.css-icon {
+    background: #4d85dc;
+}
+
+.js-icon {
+    background: #f4c542;
+    color: #473400;
+}
+
+.skill-card h3 {
+    color: #d63384;
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+.skill-card p {
+    color: #735568;
+    min-height: 55px;
+}
+
+
+/* PROGRESS */
+
+.progress {
+    width: 100%;
+    height: 8px;
+
+    background: #ffe3ee;
+
+    border-radius: 20px;
+
+    margin-top: 22px;
+
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+
+    background:
+        linear-gradient(90deg, #ff91bd, #d63384);
+
+    border-radius: 20px;
+}
+
+.html-progress {
+    width: 80%;
+}
+
+.css-progress {
+    width: 70%;
+}
+
+.js-progress {
+    width: 35%;
+}
+
+
+/* PROJECTS */
+
+.projects-section {
+    background: white;
+}
+
+.project-card {
+    max-width: 950px;
+    margin: auto;
+
+    background:
+        linear-gradient(135deg, #fff2f7, #ffffff);
+
+    border-radius: 30px;
+
+    padding: 35px;
+
+    display: flex;
+    align-items: center;
+    gap: 45px;
+
+    border: 1px solid #ffd6e6;
+
+    box-shadow:
+        0 15px 40px rgba(214, 51, 132, 0.11);
+}
+
+.project-preview {
+    min-width: 300px;
+    height: 220px;
+
+    border-radius: 25px;
+
+    background:
+        linear-gradient(135deg, #ffd1e3, #ffebf3);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 90px;
+}
+
+.project-number {
+    color: #e83e8c;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.project-info h3 {
+    color: #d63384;
+    font-size: 28px;
+    margin: 8px 0;
+}
+
+.project-info p {
+    color: #6d4d60;
+    margin-bottom: 15px;
+}
+
+.project-tags {
+    margin-bottom: 22px;
+}
+
+.project-tags span {
+    display: inline-block;
+
+    background: #ffdbea;
+    color: #b52c6c;
+
+    padding: 6px 14px;
+    margin-right: 7px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+/* CONTACT */
+
+.contact {
+    background:
+        linear-gradient(135deg, #ffe2ee, #fff5fa);
+
+    text-align: center;
+}
+
+.contact-box {
+    max-width: 750px;
+    margin: auto;
+
+    background: white;
+
+    padding: 50px 30px;
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 15px 40px rgba(214, 51, 132, 0.12);
+}
+
+.contact-heart {
+    font-size: 55px;
+    margin-bottom: 5px;
+}
+
+.contact h2 {
+    color: #d63384;
+    font-size: 34px;
+    margin-bottom: 12px;
+}
+
+.contact-box > p:not(.small-title) {
+    color: #735568;
+    margin-bottom: 25px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    text-decoration: none;
+
+    background: #ffe0ec;
+    color: #c42f73;
+
+    padding: 10px 20px;
+
+    border-radius: 25px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    background: #e83e8c;
+    color: white;
+}
+
+
+/* FOOTER */
+
+footer {
+    padding: 35px 20px;
+
+    text-align: center;
+
+    color: white;
+
+    background:
+        linear-gradient(135deg, #d63384, #e83e8c);
+}
+
+footer h3 {
+    font-size: 22px;
+}
+
+.footer-small {
+    margin-top: 8px;
+    font-size: 12px;
+    opacity: 0.85;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text,
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+    }
+
+    .about-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-preview {
+        min-width: 100%;
+    }
+}
+\n\n/* EXTRA RESPONSIVE IMPROVEMENTS */\nimg {\n    max-width: 100%;\n    height: auto;\n}\n\nhtml, body {\n    overflow-x: hidden;\n}\n\n@media (max-width: 800px) {\n    nav {\n        padding: 14px 5%;\n    }\n\n    .logo {\n        font-size: 21px;\n    }\n\n    .nav-links {\n        width: 100%;\n        gap: 8px 14px;\n    }\n\n    .nav-links a {\n        font-size: 14px;\n        padding: 6px 4px;\n    }\n\n    .hero {\n        min-height: auto;\n        padding: 48px 6% 58px;\n        gap: 32px;\n    }\n\n    .hero h1 {\n        font-size: clamp(42px, 14vw, 58px);\n    }\n\n    .hero h2 {\n        font-size: 21px;\n    }\n\n    .description {\n        font-size: 16px;\n    }\n\n    .hero-image img {\n        max-width: 520px;\n        margin: 0 auto;\n        border-radius: 22px;\n    }\n\n    section {\n        padding: 65px 6%;\n    }\n\n    .section-title {\n        font-size: 30px;\n        margin-bottom: 30px;\n    }\n\n    .about-card,\n    .project-card,\n    .contact-box {\n        padding: 28px 20px;\n        border-radius: 22px;\n    }\n\n    .about-icon {\n        min-width: 110px;\n        width: 110px;\n        height: 110px;\n        font-size: 50px;\n    }\n\n    .skill-card {\n        width: 100%;\n        max-width: 420px;\n    }\n\n    .project-preview {\n        width: 100%;\n        min-width: 0;\n        height: 180px;\n        font-size: 70px;\n    }\n\n    .project-info h3 {\n        font-size: 24px;\n    }\n\n    .btn {\n        padding: 13px 22px;\n        min-height: 46px;\n    }\n\n    .social-links {\n        flex-direction: column;\n        align-items: stretch;\n    }\n\n    .social-links a {\n        display: block;\n        width: 100%;\n        max-width: 320px;\n        margin: 0 auto;\n        padding: 13px 20px;\n    }\n\n    .contact h2 {\n        font-size: 28px;\n    }\n}\n\n@media (max-width: 420px) {\n    .hero {\n        padding-left: 5%;\n        padding-right: 5%;\n    }\n\n    .hero h1 {\n        font-size: 44px;\n    }\n\n    .hero h2 {\n        font-size: 19px;\n    }\n\n    .nav-links a {\n        font-size: 13px;\n    }\n\n    section {\n        padding-left: 5%;\n        padding-right: 5%;\n    }\n}\n
