@@ -567,3 +567,12 @@ footer h3 {
     }
 }
 \n\n/* EXTRA RESPONSIVE IMPROVEMENTS */\nimg {\n    max-width: 100%;\n    height: auto;\n}\n\nhtml, body {\n    overflow-x: hidden;\n}\n\n@media (max-width: 800px) {\n    nav {\n        padding: 14px 5%;\n    }\n\n    .logo {\n        font-size: 21px;\n    }\n\n    .nav-links {\n        width: 100%;\n        gap: 8px 14px;\n    }\n\n    .nav-links a {\n        font-size: 14px;\n        padding: 6px 4px;\n    }\n\n    .hero {\n        min-height: auto;\n        padding: 48px 6% 58px;\n        gap: 32px;\n    }\n\n    .hero h1 {\n        font-size: clamp(42px, 14vw, 58px);\n    }\n\n    .hero h2 {\n        font-size: 21px;\n    }\n\n    .description {\n        font-size: 16px;\n    }\n\n    .hero-image img {\n        max-width: 520px;\n        margin: 0 auto;\n        border-radius: 22px;\n    }\n\n    section {\n        padding: 65px 6%;\n    }\n\n    .section-title {\n        font-size: 30px;\n        margin-bottom: 30px;\n    }\n\n    .about-card,\n    .project-card,\n    .contact-box {\n        padding: 28px 20px;\n        border-radius: 22px;\n    }\n\n    .about-icon {\n        min-width: 110px;\n        width: 110px;\n        height: 110px;\n        font-size: 50px;\n    }\n\n    .skill-card {\n        width: 100%;\n        max-width: 420px;\n    }\n\n    .project-preview {\n        width: 100%;\n        min-width: 0;\n        height: 180px;\n        font-size: 70px;\n    }\n\n    .project-info h3 {\n        font-size: 24px;\n    }\n\n    .btn {\n        padding: 13px 22px;\n        min-height: 46px;\n    }\n\n    .social-links {\n        flex-direction: column;\n        align-items: stretch;\n    }\n\n    .social-links a {\n        display: block;\n        width: 100%;\n        max-width: 320px;\n        margin: 0 auto;\n        padding: 13px 20px;\n    }\n\n    .contact h2 {\n        font-size: 28px;\n    }\n}\n\n@media (max-width: 420px) {\n    .hero {\n        padding-left: 5%;\n        padding-right: 5%;\n    }\n\n    .hero h1 {\n        font-size: 44px;\n    }\n\n    .hero h2 {\n        font-size: 19px;\n    }\n\n    .nav-links a {\n        font-size: 13px;\n    }\n\n    section {\n        padding-left: 5%;\n        padding-right: 5%;\n    }\n}\n
+.project-preview{
+	overflow:hidden;
+}
+.project-preview img{
+	width:100%;
+	height:100%;
+	object-fit:cover;
+	border-radius:20px;
+}
